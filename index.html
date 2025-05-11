@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학생 이름 뽑기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>학생 이름 뽑기</h1>
+        
+        <div class="class-buttons">
+            <button onclick="selectClass(1)">1반</button>
+            <button onclick="selectClass(2)">2반</button>
+            <button onclick="selectClass(3)">3반</button>
+            <button onclick="selectClass(4)">4반</button>
+            <button onclick="selectClass(5)">5반</button>
+            <button onclick="selectClass(6)">6반</button>
+        </div>
+
+        <div class="input-section">
+            <textarea id="studentList" placeholder="학생 이름을 콤마(,)로 구분하여 입력하세요"></textarea>
+            <button onclick="saveStudents()">학생 목록 저장</button>
+        </div>
+
+        <div class="cannon-container">
+            <div class="cannon">
+                <div class="cannon-ball"></div>
+            </div>
+        </div>
+
+        <div class="result-section">
+            <button id="pickButton" onclick="pickStudent()" disabled>학생 뽑기</button>
+            <div id="result"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
